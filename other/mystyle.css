@@ -1,4 +1,6 @@
+/**********************************
 /* BODY */
+/**********************************/
 body{
     margin:0px;
 }
@@ -8,7 +10,9 @@ body{
     flex-direction: column;
 }
 
+/**********************************
 /* NAVIGATION BAR */
+/**********************************/
 .nav{
     height:50px;
     width:100%;
@@ -41,11 +45,27 @@ body{
     border: none;
     display:none; 
 }
+/* MOBILE MENU FOR WHEN SHRUNK AREA */
 .mobile-menu{
     display:none;
     flex-direction: column;
-
+    justify-content: space-around; 
+    align-items: center;
+    padding-top:5px;
+    padding-left:10px;
+    padding-right:5px;
+    padding-bottom:5px;
+    background:rgb(138, 135, 135);
+    height:100px;
 }
+.mobile-menu a{
+    width:110%;
+    text-decoration: none;
+}
+.mobile-menu a:hover{
+    background:rgb(196, 193, 193);
+}
+/* MEDIA CHECKS */
 @media (max-width:600px){
     .nav .links{
         display:none;
@@ -53,4 +73,11 @@ body{
     .hamburger-icon{
         display:block;
     }
+}
+
+/**********************************
+/*HOME PAGE CONTENT */
+/**********************************/
+.home-item1{
+        
 }
