@@ -8,6 +8,7 @@ body{
     height:100%;
     display:flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /**********************************
@@ -57,6 +58,7 @@ body{
     padding-bottom:5px;
     background:rgb(138, 135, 135);
     height:100px;
+    z-index: 1;
 }
 .mobile-menu a{
     width:110%;
@@ -79,5 +81,30 @@ body{
 /*HOME PAGE CONTENT */
 /**********************************/
 .home-item1{
-        
+    margin-top:0px;
+    max-width: 650px;
+    height:500px;
+    width:90%;
+    background: rgb(238, 236, 236);
+    
+}
+.locButton{
+    margin-top:5px;
+    box-shadow: 3px 3px 1px 1px;
+}
+.locButton:active{
+    margin-top:8px;
+    box-shadow: none;
+}
+
+/**********************************
+/*ABOUT PAGE CONTENT */
+/**********************************/
+.hero{
+    margin-top:0px;
+    width:90%;
+    height:800px;
+    background:linear-gradient(120deg,rgba(15, 15, 15, 0.1), rgba(179, 176, 176, 0.4)), url('./federico-unsplash.jpg');
+    background-size:cover;
+    background-position:40% 70%;
 }
