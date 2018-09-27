@@ -105,11 +105,26 @@ body{
 .locButton{
     margin-top:5px;
     box-shadow: 3px 3px 1px 1px;
-    margin-bottom:auto;
+    margin-bottom:10px;
 }
 .locButton:active{
-    margin-top:7px;
+    margin-top:6px;
     box-shadow: none;
+    margin-bottom:9px;
+}
+.weather{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:auto;
+    align-items: center;
+}
+.weather hr{
+    width:80%;
+    outline: 2px solid rgb(73, 106, 214);
+}
+.weather button{
+    width:120px;
 }
 
 /**********************************
@@ -215,5 +230,4 @@ textarea{
 .form-hold button:active{
     border:0px solid rgb(202, 198, 198); 
 }
-
 
