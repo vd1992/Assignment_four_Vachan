@@ -31,8 +31,9 @@ let WeatherFetch=function(){
     fetch(url).then(response => {
           return response.json();
         }).then(weatherJSON => {
+          //console.log(weatherJSON);  
           let weatherhold=document.getElementById("weatherH");
-          weatherhold.innerHTML="Temperature in Calgary "+ weatherJSON.main.temp +" Kelvin, Condition: " + weatherJSON.weather[1].description;
+          weatherhold.innerHTML="Temperature in Calgary "+ weatherJSON.main.temp +" Kelvin, Condition: " + weatherJSON.weather[0].description;
     })
 };
 
