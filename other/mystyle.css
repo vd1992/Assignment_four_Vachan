@@ -17,7 +17,7 @@ body{
 .nav{
     height:53px;
     width:100%;
-    background: rgb(228, 222, 222);
+    background: rgb(165, 163, 163);
     display:flex;
 }
 .logo{
@@ -36,10 +36,10 @@ body{
     font-weight: 500;
     font-size: 18px;
     height:36px;
-    background:rgb(228, 222, 222);
+    background: rgb(165, 163, 163);
 }
 .links a:hover{
-    background:rgb(201, 196, 196)
+    background:rgb(199, 233, 247)
 }
 .hamburger-icon{
     background: transparent;
@@ -65,7 +65,7 @@ body{
     text-decoration: none;
 }
 .mobile-menu a:hover{
-    background:rgb(196, 193, 193);
+    background:rgb(199, 233, 247);
 }
 /* MEDIA CHECKS */
 @media (max-width:600px){
@@ -83,13 +83,18 @@ body{
 .footer{
     height:50px;
     width:100%;
-    background: rgb(228, 222, 222);
+    background: rgb(165, 163, 163);
     display:flex;
     justify-content:flex-end;
     align-items:center;
 }
-.footer-content i{
+.footer-content i {
     padding-right:20px;
+}
+
+.footer-content i:hover{
+    transform:translate(0px,-4px);
+    background: rgb(199, 233, 247);
 }
 
 /**********************************
@@ -102,6 +107,10 @@ body{
     width:90%;
     background: rgb(238, 236, 236);
 }
+
+.indexh{
+    font-family: 'Indie Flower', cursive;
+}
 .locButton{
     margin-top:5px;
     box-shadow: 3px 3px 1px 1px;
@@ -113,18 +122,32 @@ body{
     margin-bottom:9px;
 }
 .weather{
-    width:80%;
+    width:40%;
+    max-width:650px;
+    outline:skyblue 2px solid;
     display: flex;
     flex-direction: column;
     margin-bottom:auto;
     align-items: center;
 }
-.weather hr{
-    width:80%;
-    outline: 2px solid rgb(73, 106, 214);
+
+.weather p{
+    margin-bottom:5px;
 }
+
+.iconhold{
+    height:50px;
+}
+
 .weather button{
     width:120px;
+    margin-bottom:5px;
+    transition:0.20s;
+    outline:rgb(52, 180, 231) 2px solid;
+}
+
+.weather button:active{
+    transform: scale(0.9,0.9);
 }
 
 /**********************************
@@ -142,17 +165,20 @@ body{
     flex-direction: column;
     margin-bottom:auto;
 }
+
 .hero h1{
     margin-top:150px;
-    margin-left:100px; 
+    margin-left:75px; 
     margin-bottom:0px;
 }
+
 .hero h3{
-    margin-left:100px;
+    margin-left:75px;
     margin-top:10px;
 }
+
 .hero p{
-    margin-left:110px;
+    margin-left:85px;
 }
 
 /**********************************
@@ -167,6 +193,7 @@ body{
     flex-wrap: wrap;
     margin-bottom:auto;
 }
+
 .content-tile{
     height:350px;
     width:400px;
@@ -177,30 +204,36 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .content{
     height:90%;
     width: 90%;
-    background:rgb(223, 218, 218);
+    background:#fff;
     border:18px solid black;
     transition:1s;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 .content-tile:hover .content{
     height: 94%;
     width: 94%;
     border:white;
 }
+
 .content h2{
     height:1em;
 }
+
 .content a{
     height:25px;
-    text-decoration: none;
+    text-decoration: underline;
+    color:black;
 }
+
 .content a:hover{
-    background:grey;
+    background:rgb(199, 233, 247)
 }
 
 /**********************************
@@ -213,21 +246,39 @@ body{
     align-items: center;
     margin-bottom:auto;
 }
+
 .form-hold form{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-textarea{
+
+.form-hold input{
+    border:darkgray 1px solid;
+}
+
+.form-hold input:focus{
+    border:1px skyblue solid;
+}
+
+.form-hold textarea{
     max-width:400px;
     height:100px;
     width:90%;
+    margin-top:10px;
+    border:darkgray 1px solid;
 }
+
+.form-hold textarea:focus{
+    border:1px skyblue solid;
+}
+
 .form-hold button{
+    margin-top:2px;
     border:5px solid rgb(202, 198, 198); 
-    transition:0.1s;
+    transition:0.05s;
 }
+
 .form-hold button:active{
     border:0px solid rgb(202, 198, 198); 
 }
-
