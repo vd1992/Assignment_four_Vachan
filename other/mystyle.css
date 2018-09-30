@@ -4,6 +4,7 @@
 body{
     margin:0px;
 }
+
 .whole{
     height:100vh;
     display:flex;
@@ -20,15 +21,18 @@ body{
     background: rgb(165, 163, 163);
     display:flex;
 }
+
 .logo{
     margin-right:auto;
     padding-left:25px;
     padding-top: 7px; 
 }
+
 .links{
     display:flex;
     padding-right:75px;
 }
+
 .links a{
     padding:15px 10px 0px;
     text-decoration: none;
@@ -38,14 +42,17 @@ body{
     height:36px;
     background: rgb(165, 163, 163);
 }
+
 .links a:hover{
     background:rgb(199, 233, 247)
 }
+
 .hamburger-icon{
     background: transparent;
     border: none;
     display:none; 
 }
+
 /* MOBILE MENU FOR WHEN SHRUNK AREA */
 .mobile-menu{
     display:none;
@@ -60,13 +67,16 @@ body{
     height:100px;
     z-index: 1;
 }
+
 .mobile-menu a{
     width:110%;
     text-decoration: none;
 }
+
 .mobile-menu a:hover{
     background:rgb(199, 233, 247);
 }
+
 /* MEDIA CHECKS */
 @media (max-width:600px){
     .nav .links{
@@ -88,6 +98,7 @@ body{
     justify-content:flex-end;
     align-items:center;
 }
+
 .footer-content i {
     padding-right:20px;
 }
@@ -111,16 +122,19 @@ body{
 .indexh{
     font-family: 'Indie Flower', cursive;
 }
+
 .locButton{
     margin-top:5px;
     box-shadow: 3px 3px 1px 1px;
     margin-bottom:10px;
 }
+
 .locButton:active{
     margin-top:6px;
     box-shadow: none;
     margin-bottom:9px;
 }
+
 .weather{
     width:40%;
     max-width:650px;
@@ -255,10 +269,12 @@ body{
 
 .form-hold input{
     border:darkgray 1px solid;
+    margin-bottom: 5px;
 }
 
 .form-hold input:focus{
     border:1px skyblue solid;
+    transform:scale(1.1,1.0);
 }
 
 .form-hold textarea{
@@ -271,12 +287,17 @@ body{
 
 .form-hold textarea:focus{
     border:1px skyblue solid;
+    transform:scale(1.1,1.0);
 }
 
 .form-hold button{
-    margin-top:2px;
+    margin-top:10px;
     border:5px solid rgb(202, 198, 198); 
-    transition:0.05s;
+    transition:0.025s;
+}
+
+.form-hold button:hover{
+    border:5px solid skyblue; 
 }
 
 .form-hold button:active{
